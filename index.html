@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Web_Linux OS</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <!-- ターミナル表示領域 -->
+      <div id="terminal-container">
+        <div id="output"></div>
+        <div id="screen" style="white-space: pre; font-family: monospace;"></div>
+      </div>
+
+      <!-- スマホ向け仮想キーボード・補助バー -->
+      <div id="mobile-toolbar">
+        <button class="key-btn" data-key="Tab">Tab</button>
+        <button class="key-btn" data-key="Control">Ctrl</button>
+        <button class="key-btn" data-key="Escape">Esc</button>
+        <button class="key-btn" data-key="ArrowUp">↑</button>
+        <button class="key-btn" data-key="ArrowDown">↓</button>
+      </div>
+
+      <!-- フッター（著作権＆クレジット表記） -->
+      <footer id="footer">
+        <p>
+          &copy; 2026 Tadanohito.Dev | Powered by 
+          <a href="https://github.com/copy/v86" target="_blank" rel="noopener">v86</a> (by Fabian Hemmer) &amp; 
+          <a href="https://alpinelinux.org/" target="_blank" rel="noopener">Alpine Linux</a>
+        </p>
+      </footer>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
